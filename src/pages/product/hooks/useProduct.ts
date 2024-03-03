@@ -19,15 +19,9 @@ export const useProduct = () => {
   });
 
   const total = useRef<number>(0);
-  const firstRender = useRef<boolean>(true);
 
   useEffect(() => {
-    // Not get data when component mount
-    if (firstRender.current) {
-      firstRender.current = false;
-    } else {
-      getProduct();
-    }
+    getProduct();
   }, [params]);
 
   useEffect(() => {

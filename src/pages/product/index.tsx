@@ -16,17 +16,12 @@ export default function ProductPage() {
   } = useSearchProduct();
 
   const [searchValue, setSearchValue] = useState<string>("");
-
-  console.log(searchValue);
-
   /**
    * Handles search - only triggered when the search value changes
    */
   useEffect(() => {
     if (searchValue) {
       searchProduct(searchValue);
-    } else {
-      setParams({ skip: 0, limit: 20 });
     }
   }, [searchValue]);
 
