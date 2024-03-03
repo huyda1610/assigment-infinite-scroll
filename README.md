@@ -25,7 +25,7 @@ Open your favourite terminal and copy this code
 
 ```bash
 cd source_folder_path
-git clone  http://gitlab.fpt.net/misftel/misftel-web-ui.git
+git clone  https://github.com/huyda1610/assigment-infinite-scroll.git
 cd assigment-infinite-scroll
 code .
 ```
